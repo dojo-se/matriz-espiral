@@ -11,8 +11,13 @@ import unittest
 def gera_espiral(linhas, colunas):
 	matriz = [[]]	
 
-	for i in xrange(0,colunas):
+	for i in range(0,colunas):
 		matriz[0].append(i + 1)
+
+	if linhas == 2:
+		matriz.append([])
+		for i in range(colunas*linhas, colunas, -1):
+			matriz[1].append(i)	
 
 	return matriz
 
@@ -23,6 +28,8 @@ class ProblemaParaResolverTest(unittest.TestCase):
 		self.assertEqual([[1,2]], gera_espiral(1,2))		
 	def test_uma_linha_n_colunas(self):
 		self.assertEqual([[1,2,3,4,5]], gera_espiral(1,5))
+	def test_uma_linha_n_colunas(self):
+		self.assertEqual([[1,2,3,4,5],[10,9,8,7,6]], gera_espiral(2,5))
 
 if __name__ == '__main__':
 	unittest.main()
