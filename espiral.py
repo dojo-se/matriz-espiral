@@ -8,12 +8,21 @@
 
 import unittest
 
-def problema_para_resolver():
-    return True
+def gera_espiral(linhas, colunas):
+	matriz = [[]]	
+
+	for i in xrange(0,colunas):
+		matriz[0].append(i + 1)
+
+	return matriz
 
 class ProblemaParaResolverTest(unittest.TestCase):
-    def test_simples(self):
-        self.assertEqual(True, problema_para_resolver())
+	def test_simples(self):
+		self.assertEqual([[1]], gera_espiral(1,1))
+	def test_uma_linha(self):
+		self.assertEqual([[1,2]], gera_espiral(1,2))		
+	def test_uma_linha_n_colunas(self):
+		self.assertEqual([[1,2,3,4,5]], gera_espiral(1,5))
 
 if __name__ == '__main__':
-    unittest.main()
+	unittest.main()
