@@ -1,4 +1,5 @@
-Linguagens
+#Linguagens
+
 	C++			||
 	JS			
 	Java		|
@@ -6,13 +7,15 @@ Linguagens
 	Python		|||||
 	Verilog		|
 
-Problemas
+#Problemas
+
 	Números Romanos			||||
 	Escolhendo uma pizza	
 	Quadrados e Círculos	
 	Matriz Espiral			||||||
 	
-Pontos Positivos
+#Pontos Positivos
+
 	Um novo local											||
 	Oportunidade de aprender uma nova linguagem 			|
 	Muitos novatos, mais do que os vetaranos				|
@@ -24,7 +27,8 @@ Pontos Positivos
 	quadro novo!!! no plástico
 	Todo mundo se manifestou e deu opiniões!
 
-Pontos Negativos
+#Pontos Negativos
+
 	Distância do estacionamento até o local
 	Começar mais cedo 										|
 	Ter mais rodadas
